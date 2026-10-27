@@ -23,8 +23,9 @@ def get_no_of_students():
         except ValueError:
             print("Please enter a valid number")
 
-def get_student_data():    
-    student_id = input("\nEnter Student ID: ")
+def get_student_data(position,total):    
+    print(f"\nStudent {position} of {total}")
+    student_id = input("Enter Student ID: ")
     student_name = input("Enter Student Name: ")
     marks = {subject : get_marks(subject, student_name) for subject in subjects}
     students = {"id": student_id, "name": student_name, "marks": marks}
@@ -59,7 +60,7 @@ def calculate_result(students):
 
 def get_student_details():
     no_of_students = get_no_of_students()
-    student_data = [get_student_data() for _ in range(no_of_students)]
+    student_data = [get_student_data(position,no_of_students) for position in range(1,no_of_students+1)]
     student_result = [calculate_result(student) for student in student_data]
     return student_result
 
