@@ -1,0 +1,12 @@
+101,Rahul,Python Developer,50000
+102,Anjali,Tester,45000
+103,John,Developer,60000
+104,Priya,Tester,48000
+105,Meera,Data Analyst,72000
+106,Arjun,Developer,50001
+107,Kavya,Project Manager,95000
+108,Suresh,Tester,30000
+109,Divya,QA Lead,51000
+110,Vikram,Data Analyst,49999
+111,Rohan,UI Designer,55000
+112,Sneha Rao,Business Analyst,58000
