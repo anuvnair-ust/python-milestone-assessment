@@ -94,7 +94,7 @@ Average: 65.00
 Grade: B
 Result: PASS
 
-Highest Scoring Student: ['Rahul']
+Highest Scoring Student: Rahul
 Students above 75: Rahul
 ```
 
@@ -118,7 +118,7 @@ Average: 78.33
 Grade: A
 Result: PASS
 
-Highest Scoring Student: ['Asha']
+Highest Scoring Student: Asha
 Students above 75: Asha
 ```
 

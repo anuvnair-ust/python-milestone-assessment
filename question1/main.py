@@ -87,7 +87,7 @@ def display_results(students):
 
     above_students = ", ".join(get_students_above_cut_off_marks(students)) or "None"
 
-    print("Highest Scoring Student:", get_highest_scorer(students))
+    print("Highest Scoring Student:", ", ".join(get_highest_scorer(students)))
     print(f"Students above {cut_off_mark}: {above_students}")
 
 

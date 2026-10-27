@@ -1,3 +1,7 @@
+import sys
+
+sys.stdout.reconfigure(encoding="utf-8")
+
 employee_file = "employees.txt"
 cut_off_salary = 50000
 

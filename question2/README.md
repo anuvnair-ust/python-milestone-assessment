@@ -134,6 +134,7 @@ Error: 'employees.txt' not found. Add an employee to create it.
 ## Notes
 
 - `add_employee()` is called by `add_employees_from_user()` only when the user answers `y` to the first prompt, so records are not appended on every run. Names, roles and IDs must not contain commas, and the program re-prompts if they do.
+- The program sets the console output to UTF-8 with `sys.stdout.reconfigure()`, so the rupee sign (`₹`) prints even when the output is piped or redirected. Without it, a redirected run on Windows raises an encoding error.
 - The file is parsed by splitting on commas, so names and roles must not contain commas.
 - The program runs at module level: `add_employees_from_user()`, `read_employees()` and `display_results()` are called directly when the file is executed, with no `if __name__ == "__main__":` guard. Importing the file from another script will start the prompts and the report.
 
@@ -157,3 +158,4 @@ Error: 'employees.txt' not found. Add an employee to create it.
 | Type conversion | `int(salary)` when reading the file |
 | String formatting | f-strings in `display_details()` and `display_results()` |
 | Module-level constants | `employee_file` and `cut_off_salary` |
+| `sys.stdout.reconfigure()` | Sets UTF-8 output so the rupee sign prints, including when output is redirected |
